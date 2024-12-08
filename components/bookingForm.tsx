@@ -2,8 +2,6 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Label } from "@/components/ui/label"
 import {
   Select,
@@ -29,7 +27,6 @@ const times = Array.from({ length: 24 }, (_, i) => {
 
 export function BookingForm() {
   const [pickupDate, setPickupDate] = useState<string>("")
-  const [dropoffDate, setDropoffDate] = useState<string>("")
 
   return (
     <div className="container mx-auto mt-8 relative z-10">

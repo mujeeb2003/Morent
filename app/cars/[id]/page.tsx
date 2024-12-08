@@ -11,13 +11,9 @@ import { CarSections } from "@/components/carSections";
 import { MobileFilters } from "@/components/mobileFilters";
 import Link from "next/link";
 
-interface CarDetailsPageProps {
-    params: {
-        id: string;
-    };
-}
 
-export default function CarDetails({ params }: CarDetailsPageProps) {
+
+export default function CarDetails() {
     const carImages = [
         {
             src: "/images/car-2.svg",
@@ -63,6 +59,8 @@ export default function CarDetails({ params }: CarDetailsPageProps) {
             capacity: "2 People",
             price: 80.0,
             originalPrice: 100.0,
+            isFavorite: true,
+
         },
         {
             id: "3",
@@ -73,6 +71,7 @@ export default function CarDetails({ params }: CarDetailsPageProps) {
             transmission: "Manual",
             capacity: "4 People",
             price: 96.0,
+            isFavorite: true,
         },
     ];
 
@@ -87,6 +86,7 @@ export default function CarDetails({ params }: CarDetailsPageProps) {
             capacity: "6 People",
             price: 72.0,
             originalPrice: 80.0,
+            isFavorite: true,
         },
         {
             id: "5",
@@ -108,6 +108,7 @@ export default function CarDetails({ params }: CarDetailsPageProps) {
             transmission: "Manual",
             capacity: "6 People",
             price: 74.0,
+            isFavorite: false,
         },
     ];
 
@@ -193,10 +194,10 @@ export default function CarDetails({ params }: CarDetailsPageProps) {
                                     </Button>
                                 </div>
                                 <p className="text-secondary-500 text-sm md:text-base leading-relaxed">
-                                    NISMO has become the embodiment of Nissan's
+                                    NISMO has become the embodiment of Nissan&apos;s
                                     outstanding performance, inspired by the
-                                    most unforgiving proving ground, the "race
-                                    track".
+                                    most unforgiving proving ground, the &quot;race
+                                    track&quot;.
                                 </p>
                                 <div className="grid grid-cols-2 gap-4">
                                     {specifications.map((spec, index) => (

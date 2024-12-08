@@ -3,7 +3,7 @@ import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Bell, Heart, Search, Settings, SlidersHorizontal } from 'lucide-react'
 import { MobileMenu } from "@/components/mobileMenu"
-
+import Image from "next/image"
 export function Navbar() {
   return (
     <nav className="border-b bg-white">
@@ -43,7 +43,7 @@ export function Navbar() {
               <Settings className="h-5 w-5" />
             </Button>
             <Button size="icon" className="rounded-full">
-              <img
+              <Image
                 alt="Avatar"
                 className="rounded-full"
                 src="/placeholder.svg?height=32&width=32"

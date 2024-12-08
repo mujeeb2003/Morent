@@ -24,7 +24,7 @@ const times = Array.from(
 );
 
 export function RentalForm() {
-    const [step, setStep] = useState(1);
+    const [step] = useState(1);
     const [paymentMethod, setPaymentMethod] = useState("credit-card");
 
     return (

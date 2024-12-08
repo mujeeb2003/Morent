@@ -92,7 +92,6 @@ const times = Array.from({ length: 24 }, (_, i) => {
 
 function Dashboard() {
     const [pickupDate, setPickupDate] = useState<string>("");
-    const [dropoffDate, setDropoffDate] = useState<string>("");
 
     return (
         <div className="bg-gray-100">
