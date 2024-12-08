@@ -347,7 +347,7 @@ export function RentalForm() {
                     </div>
 
                     <Link href={"/dashboard"}>
-                        <Button className="w-full h-12 bg-primary-500 hover:bg-primary-600">
+                        <Button className="w-auto mt-4 h-12 bg-primary-500 hover:bg-primary-600">
                             Rent Now
                         </Button>
                     </Link>

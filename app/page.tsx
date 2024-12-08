@@ -95,8 +95,8 @@ export default function Home() {
                         ))}
                     </div>
                     <div className="flex flex-row mt-8 justify-center items-center">
-                        <Link href="/category">
-                            <Button className="w-full md:w-auto bg-primary-500 ml-auto">
+                        <Link href="/category" className="ml-auto">
+                            <Button className="w-full md:w-auto bg-primary-500">
                                 Show more cars
                             </Button>
                         </Link>
