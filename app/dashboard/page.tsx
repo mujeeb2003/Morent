@@ -4,7 +4,6 @@ import { Navbar } from "@/components/navbar";
 import Sidebar from "@/components/sidebar";
 import React, { useState } from "react";
 import Image from "next/image";
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import {
     Select,
@@ -13,8 +12,6 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { Button } from "@/components/ui/button";
-import { ArrowUpDown } from "lucide-react";
 import PieChartComponent from "@/components/chartView";
 
 const cars = [

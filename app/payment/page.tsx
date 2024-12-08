@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { Navbar } from "@/components/navbar";
 import { RentalForm } from "@/components/rentalForm";
 import { RentalSummary } from "@/components/rentalSummary";
